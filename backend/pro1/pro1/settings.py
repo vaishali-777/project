@@ -36,7 +36,7 @@ INSTALLED_APPS = [
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
-    'django.contrib.staticfiles',
+    'pro1'
 ]
 
 MIDDLEWARE = [
@@ -74,8 +74,11 @@ WSGI_APPLICATION = 'pro1.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'add.mssql',
+        'NAME': 'react',
+        'HOST': 'localhost',
+        'USER': 'root',
+        'PASSWORD': 'root',
     }
 }
 
